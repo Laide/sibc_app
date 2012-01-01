@@ -1,3 +1,3 @@
 # Ruby on Rails Application: sibc app
 
-This is the sibc application for my course work by [Laide Olanlokun]
+This is the sbic application for my course work by [Laide Olanlokun]

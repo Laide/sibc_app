@@ -1,4 +1,20 @@
 SibcApp::Application.routes.draw do
+  get "pages/Home"
+
+  get "pages/News_and_Upcoming_Events"
+
+  get "pages/Current_Surveys"
+
+  get "pages/Submit_your_Sightings"
+
+  get "pages/A_mentiion_of_our_Enquiry_services"
+
+  get "pages/Recording_Tools"
+
+  get "pages/About_Us"
+
+  get "pages/Contact_Us"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
