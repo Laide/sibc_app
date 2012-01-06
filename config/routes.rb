@@ -1,20 +1,18 @@
 SibcApp::Application.routes.draw do
-  get "pages/Home"
+  
+  match '/News_and_Upcoming_Events', :to => 'pages#News_and_Upcoming_Events'
+  match '/Current_Surveys', :to => 'pages#Current_Surveys'
+  match '/Submit_your_Sightings', :to => 'pages#Submit_your_Sightings'
+  match '/A_mentiion_of_our_Enquiry_services', :to => 'pages#A_mentiion_of_our_Enquiry_services'
+  match '/Recording_Tools', :to => 'pages#Recording_Tools'
+  match '/About_Us', :to => 'pages#About_Us'
+  match '/Contact_Us', :to => 'pages#Contact_Us'
 
-  get "pages/News_and_Upcoming_Events"
+  root :to => 'pages#Home'
 
-  get "pages/Current_Surveys"
+  
 
-  get "pages/Submit_your_Sightings"
-
-  get "pages/A_mentiion_of_our_Enquiry_services"
-
-  get "pages/Recording_Tools"
-
-  get "pages/About_Us"
-
-  get "pages/Contact_Us"
-
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
