@@ -1,12 +1,13 @@
 <header>
-  <%= image_tag("logo.jpg", :alt => "SIBC", :class => "round") %>
+  <%= logo = image_tag("logo.png", :alt => "SIBC", :class => "round") %>
+  
   <nav class="round">
     <ul>
-      <li><%= link_to "Home", '#' %></li>
-      <li><%= link_to "Enquiry Service", '#' %></li>
-      <li><%= link_to "Services and Support", '#' %></li>
-      <li><%= link_to "Recording Tools", '#' %></li>
-      <li><%= link_to "Submit your Sightings", '#' %></li>
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "News and Upcoming Events", news_path %></li>      
+      <li><%= link_to "Current Surveys", surveys_path %></li>
+      <li><%= link_to "Recording Tools", recording_path %></li>
+      <li><%= link_to "Submit your Sightings", sightings_path %></li>
       <li><%= link_to "Sign in", '#' %></li>
     </ul>
   </nav>

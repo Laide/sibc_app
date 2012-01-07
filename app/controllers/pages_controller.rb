@@ -1,33 +1,33 @@
 class PagesController < ApplicationController
-  def Home
+  def home
   @title = "Home"
   end
 
-  def News_and_Upcoming_Events
+  def news
   @title = "News and Upcoming Events"
   end
 
-  def Current_Surveys
+  def surveys
   @title = "Current Surveys"
   end
 
-  def Submit_your_Sightings
+  def sightings
   @title = "Submit your Sightings"
   end
 
-  def A_mentiion_of_our_Enquiry_services
+  def enquiry
   @title = "A mention of our Enquiry services"
   end
 
-  def Recording_Tools
+  def recording
   @title = "Recording Tools"
   end
 
-  def About_Us
+  def about
   @title = "About Us"
   end
 
-  def Contact_Us  
+  def contact  
   @title = "Contact Us"
   end
   

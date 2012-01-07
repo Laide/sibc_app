@@ -2,58 +2,65 @@ require 'spec_helper'
 
 describe PagesController do
 
-  describe "GET 'Home'" do
+  describe "GET 'home'" do
     it "should be successful" do
-      get 'Home'
+      get 'home'
       response.should be_success
     end
   end
 
-  describe "GET 'News_and_Upcoming_Events'" do
+  describe "GET 'news'" do
     it "should be successful" do
-      get 'News_and_Upcoming_Events'
+      get 'news'
       response.should be_success
     end
   end
 
-  describe "GET 'Current_Surveys'" do
+  describe "GET 'surveys'" do
     it "should be successful" do
-      get 'Current_Surveys'
+      get 'surveys'
       response.should be_success
     end
   end
 
-  describe "GET 'Submit_your_Sightings'" do
+  describe "GET 'sightings'" do
     it "should be successful" do
-      get 'Submit_your_Sightings'
+      get 'sightings'
       response.should be_success
     end
   end
 
-  describe "GET 'A_mentiion_of_our_Enquiry_services'" do
+  describe "GET 'enquiry'" do
     it "should be successful" do
-      get 'A_mentiion_of_our_Enquiry_services'
+      get 'enquiry'
       response.should be_success
     end
   end
 
-  describe "GET 'Recording_Tools'" do
+  describe "GET 'recording'" do
     it "should be successful" do
-      get 'Recording_Tools'
+      get 'recording'
       response.should be_success
     end
   end
 
-  describe "GET 'About_Us'" do
+  describe "GET 'about'" do
     it "should be successful" do
-      get 'About_Us'
+      get 'about'
       response.should be_success
     end
   end
 
-  describe "GET 'Contact_Us'" do
+  describe "GET 'contact'" do
     it "should be successful" do
-      get 'Contact_Us'
+      get 'contact'
+      response.should be_success
+    end
+  end
+
+describe "GET 'help'" do
+    it "should be successful" do
+      get 'help'
       response.should be_success
     end
   end

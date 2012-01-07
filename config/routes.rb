@@ -1,14 +1,19 @@
 SibcApp::Application.routes.draw do
-  
-  match '/News_and_Upcoming_Events', :to => 'pages#News_and_Upcoming_Events'
-  match '/Current_Surveys', :to => 'pages#Current_Surveys'
-  match '/Submit_your_Sightings', :to => 'pages#Submit_your_Sightings'
-  match '/A_mentiion_of_our_Enquiry_services', :to => 'pages#A_mentiion_of_our_Enquiry_services'
-  match '/Recording_Tools', :to => 'pages#Recording_Tools'
-  match '/About_Us', :to => 'pages#About_Us'
-  match '/Contact_Us', :to => 'pages#Contact_Us'
 
-  root :to => 'pages#Home'
+  get "users/new"
+
+  match '/signup',  :to => 'users#new'
+
+  match '/news', :to => 'pages#news'
+  match '/surveys', :to => 'pages#surveys'
+  match '/sightings', :to => 'pages#sightings'
+  match '/enquiry', :to => 'pages#enquiry'
+  match '/recording', :to => 'pages#recording'
+  match '/about', :to => 'pages#about'
+  match '/contact', :to => 'pages#contact'
+  match '/help', :to => 'pages#help'
+
+  root :to => 'pages#home'
 
   
 
