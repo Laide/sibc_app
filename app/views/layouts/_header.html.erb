@@ -1,14 +1,19 @@
-<header>
-  <%= logo = image_tag("logo.png", :alt => "SIBC", :class => "round") %>
-  
+
+ <header>
+  <%= logo = image_tag("logo.png", :alt => "SIBC", :class => "round") %> 
   <nav class="round">
     <ul>
       <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "Profile", current_user %></li>
       <li><%= link_to "News and Upcoming Events", news_path %></li>      
       <li><%= link_to "Current Surveys", surveys_path %></li>
       <li><%= link_to "Recording Tools", recording_path %></li>
       <li><%= link_to "Submit your Sightings", sightings_path %></li>
-      <li><%= link_to "Sign in", '#' %></li>
-    </ul>
+      <% if signed_in? %>
+      <li><%= link_to "Sign out", signout_path, :method => :delete %></li>
+      <% else %>
+      <li><%= link_to "Sign in", signin_path %></li>
+      <% end %>
+      </ul>
   </nav>
 </header>

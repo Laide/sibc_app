@@ -29,7 +29,12 @@ Spork.prefork do
     # instead of true.
     config.use_transactional_fixtures = true
   end
+
+ Spork.each_run do
+ end
+ 
+ def test_sign_in(user)
+    controller.sign_in(user)
+  end
 end
 
-Spork.each_run do
-end

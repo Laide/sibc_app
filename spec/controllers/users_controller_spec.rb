@@ -89,6 +89,11 @@ describe "POST 'create'" do
                   :password => "medlyd", :password_confirmation => "medlyd" }
       end
 
+     it "should sign the user in" do
+        post :create, :user => @attr
+        controller.should be_signed_in
+      end
+
       it "should create a user" do
         lambda do
           post :create, :user => @attr
