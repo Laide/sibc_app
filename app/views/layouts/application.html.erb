@@ -9,11 +9,13 @@
     <div class="container">
       <%= render 'layouts/header' %>
       <section class="round">
-        <% flash.each do |key, value| %>
-          <div class="flash <%= key %>"><%= value %></div>
-        <% end %>
-        <%= yield %>
-      </section>
+        <table width = '700'>
+        <tr>
+        <td style="vertical-align:top" width = '700'><%= yield %></td>
+        <td style="vertical-align:top"><%= render 'layouts/sidebar' %></td>
+        </tr>
+        </table>
+        </section>
       <%= render 'layouts/footer' %>
       <%= debug(params) if Rails.env.development? %>
     </div>

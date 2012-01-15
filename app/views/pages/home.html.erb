@@ -1,7 +1,41 @@
+ 
+ <% if signed_in? %>
+  <table class="front" summary="For signed-in users">
+    <tr>
+      <td class="main">
+        <h1 class="micropost">What's up?</h1>
+        <%= render 'shared/micropost_form' %>
+        <%= render 'shared/feed' %>
+      </td>
+      <td class="sidebar round">
+        <%= render 'shared/user_info' %>
+      </td>
+    </tr>
+  </table>
+ <% else %>
+    <h1>Welcome to the SBIC Website</h1>
+    <p style="text-align:justify">
 
-    <h1>Sbic App</h1>
-    <p>
-      This is the home page for the SBIC site
-<li><%= link_to "Sign up", signup_path, :class => "signup_button round" %></li>
+	Surrey is a county rich in wildlife. Despite its small size and proximity to London, it supports a range of habitats and species of local, national and 	
+	international importance. The varied geology and topography, together with a lengthy human influence, have sustained Surrey's woodland, heathland, chalk 	
+	grassland, open water and rivers. Surrey is the most wooded county in England and its heathland is of international importance. </br>
+
+	<div class="image_design">
+        <%= logo = image_tag("spider1.png", :alt => "SIBC", :class => "round") %> 
+	</div>  
+	
+	</br> 	</br> 	</br>   </br>   </br>   </br>   </br>  </br>  </br>  </br>   </br>  </br>  </br>  </br> </br>
+
+	The North Downs supports chalk grassland and Surrey acts as a 
+	stronghold for species such as the silver-spotted skipper. Surrey Wildlife Trust is adopting a bold approach towards delivering and influencing wildlife 
+	conservation and biodiversity and encouraging people to understand and enjoy wildlife and wild spaces. This is based on our vision - to create a 'Living 	
+	Landscape', rich in wildlife and valued by all.
     </p>
+ 
+ <% end %>
+
+ </br> </br>
+  <div class="image_design">
+        <%= logo = image_tag("bees.png", :alt => "SIBC", :class => "round") %>   
+ </div> 
   

@@ -1,0 +1,71 @@
+<h1>Record Species Form</h1>
+
+<%= form_for(@species) do |f| %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :sex %><br />
+    <%= f.text_field :sex %>
+  </div>
+  <div class="field">
+    <%= f.label :abundance %><br />
+    <%= f.text_field :abundance %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :county %><br />
+    <%= f.text_field :county %>
+  </div>
+  <div class="field">
+    <%= f.label :grid_reference %><br />
+    <%= f.text_field :grid_reference %>
+  </div>
+  <div class="field">
+    <%= f.label :provenance %><br />
+    <%= f.text_field :provenance %>
+  </div>
+  <div class="field">
+    <%= f.label :start_date %><br />
+    <%= f.text_field :start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :end_date %><br />
+    <%= f.text_field :end_date %>
+  </div>
+  <div class="field">
+    <%= f.label :observer %><br />
+    <%= f.text_field :observer %>
+  </div>
+  <div class="field">
+    <%= f.label :determiner %><br />
+    <%= f.text_field :determiner %>
+  </div>
+  <div class="field">
+    <%= f.label :record_type %><br />
+    <%= f.text_field :record_type %>
+  </div>
+  <div class="field">
+    <%= f.label :reference %><br />
+    <%= f.text_field :reference %>
+  </div>
+  <div class="field">
+    <%= f.label :comment %><br />
+    <%= f.text_field :comment %>
+  </div>
+  <div class="field">
+    <%= f.label :created_at %><br />
+    <%= f.text_field :created_at %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_at %><br />
+    <%= f.text_field :updated_at %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Submit Species Record" %>
+  </div>
+<% end %>

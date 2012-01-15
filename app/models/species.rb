@@ -22,4 +22,7 @@
 #
 
 class Species < ActiveRecord::Base
+
+attr_accessible :id, :name, :sex, :abundance, :location, :county, :grid_reference, :provenance, :start_date, :end_date, :observer, :determiner, :record_type, :reference, :comment, :created_at, :updated_at,
+
 end

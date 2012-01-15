@@ -3,23 +3,23 @@
 }
 
 body {
-  background: #cff;
+  background: #9acd32;
 }
 
 header {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 header img {
   padding: 1em;
-  background: #fff;
+  background: #000;
 }
 
 section {
   margin-top: 1em;
-  font-size: 120%;
+  font-size: 150%;
   padding: 20px;
-  background: #fff;
+  background: #eee8aa;
 }
 
 section h1 {
@@ -51,6 +51,7 @@ nav {
 nav {
   background-color: white;
   padding: 0 0.7em;
+  font-size: 102%;
   white-space: nowrap;
 }
 
@@ -66,7 +67,7 @@ nav ul li {
 }
 
 nav ul li a {
-  padding: 0 30px;
+  padding: 0 22.5px;
   font-weight: bold;
 }
 
@@ -164,4 +165,64 @@ div.field, div.actions {
 #error_explanation ul li {
   font-size: 12px;
   list-style: square;
+}
+h1.micropost {
+  margin-bottom: 0.3em;
+}
+
+table.microposts {
+  margin-top: 1em;
+}
+
+table.microposts tr {
+  height: 70px;
+}
+
+table.microposts tr td.gravatar {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  width: 50px;
+}
+
+table.microposts tr td.micropost {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  padding-top: 10px;
+}
+
+table.microposts tr td.micropost span.timestamp {
+  display: block;
+  font-size: 85%;
+  color: #666;
+}
+
+div.user_info img {
+  padding-right: 0.1em;
+}
+
+div.user_info a {
+  text-decoration: none;
+}
+
+div.user_info span.user_name {
+  position: absolute;
+}
+
+div.user_info span.microposts {
+  font-size: 80%;
+}
+
+form.new_micropost {
+  margin-bottom: 2em;
+}
+
+form.new_micropost textarea {
+  height: 4em;
+  margin-bottom: 0;
+}
+
+.image_design {
+display:block;
+position: absolute;
+left: 380px;
 }
