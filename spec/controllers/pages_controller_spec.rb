@@ -23,12 +23,12 @@ describe PagesController do
     end
   end
 
-  describe "GET 'sightings'" do
-    it "should be successful" do
-      get 'sightings'
-      response.should be_success
-    end
-  end
+  #describe "GET 'sightings'" do
+   # it "should be successful" do
+    #  get 'sightings'
+     # response.should be_success
+    #end
+  #end
 
   describe "GET 'enquiry'" do
     it "should be successful" do

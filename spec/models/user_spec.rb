@@ -153,6 +153,10 @@ describe "micropost associations" do
       @user.should respond_to(:microposts)
     end
 
+  it "should have the right microposts in the right order" do
+      @user.microposts.should == [@mp2, @mp1]
+    end
+
 
 
    it "should destroy associated microposts" do
@@ -162,9 +166,7 @@ describe "micropost associations" do
       end
     end
 
-    it "should have the right microposts in the right order" do
-      @user.microposts.should == [@mp2, @mp1]
-    end
+    
 
 describe "status feed" do
 

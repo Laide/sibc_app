@@ -1,6 +1,9 @@
 class MicropostsController < ApplicationController
-  before_filter :authenticate
-
+  before_filter :authenticate :only => [:create, :destroy]
+   
+  def index
+  end
+ 
   def create
     @micropost  = current_user.microposts.build(params[:micropost])
     if @micropost.save
